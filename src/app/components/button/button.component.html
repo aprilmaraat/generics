@@ -1,0 +1,15 @@
+<div class="buttons-container">
+  <button *ngFor="let button of buttonArray" class="sb-button">
+      <span *ngIf="button.materialIcon !== ''; else text;" class="material-symbols-outlined">
+          {{button.materialIcon}}
+      </span>
+      <ng-template #text>
+          <span>{{button.text}}</span>
+          <!-- <ng-template #iconUrl>
+              <span>
+                  <img [src]="button.iconUrl" alt="">
+              </span>
+          </ng-template> -->
+      </ng-template>
+  </button>
+</div>

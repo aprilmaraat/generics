@@ -6,7 +6,7 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./button.component.scss']
 })
 export class ButtonComponent implements OnInit {
-  @Input() buttonArray: {}[] = []
+  @Input() buttonArray: ButtonComponentFields[] = [];
 
   constructor() {
   }
@@ -14,4 +14,10 @@ export class ButtonComponent implements OnInit {
   ngOnInit(): void {
   }
 
+}
+
+export interface ButtonComponentFields {
+  materialIcon: string,
+  text: string,
+  iconUrl: string,
 }

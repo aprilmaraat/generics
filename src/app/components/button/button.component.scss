@@ -1,6 +1,8 @@
 @import '../../../styles.scss';
 
 .buttons-container {
+  @extend .center-position;
+  position: absolute;
   box-shadow: 1px 1px 5px #88888863;
   display: flex;
   width: fit-content;
@@ -8,8 +10,8 @@
 
   .sb-button {
     position: relative;
-    min-width: 50px;
-    min-height: 50px;
+    min-width: $standard-button-height;
+    min-height: $standard-button-height;
     border-radius: 1px;
     border: none;
     background-color: $standard-white;

@@ -1,0 +1,26 @@
+@import '../../.././styles.scss';
+
+.tooltip-container {
+  @extend .center-position;
+  position: absolute;
+  background-color: $standard-darkblue;
+  color: $standard-white;
+  display: flex;
+  width: fit-content;
+  block-size: fit-content;
+  padding: 5px;
+}
+
+.tooltip-arrow-up {
+  margin-top: calc($standard-button-height + 5px);
+  &::after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent $standard-darkblue transparent;
+  }
+}

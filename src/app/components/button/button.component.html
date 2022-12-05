@@ -6,5 +6,6 @@
       <ng-template #text>
           <span>{{button.text}}</span>
       </ng-template>
+      <lib-tooltip *ngIf="toolTip !== ''">{{toolTip}}</lib-tooltip>
   </button>
 </div>

@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { ChangeDetectorRef, Component, ElementRef, Input, Renderer2, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'lib-tooltip',
@@ -6,6 +6,8 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./tooltip.component.scss']
 })
 export class TooltipComponent {
-  @Input() text: string = 'Sample';
-
+  ngOnInit() {
+    let toolTipWidth = document.getElementsByClassName('tooltip-container').item(0)?.clientWidth.valueOf()
+    console.log(toolTipWidth);
+  }
 }

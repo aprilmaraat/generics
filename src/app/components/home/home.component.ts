@@ -14,4 +14,5 @@ export class HomeComponent {
       iconUrl: '',
     } as ButtonComponentFields,
   ];
+  toolTip: string = 'schedulescheduleschedulescheduleschedule';
 }

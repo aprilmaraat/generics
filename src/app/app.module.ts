@@ -11,8 +11,7 @@ import { TooltipComponent } from './components/tooltip/tooltip.component';
   declarations: [
     AppComponent,
     ButtonComponent,
-    HomeComponent,
-    TooltipComponent
+    HomeComponent
   ],
   imports: [
     BrowserModule,
